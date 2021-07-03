@@ -1,5 +1,4 @@
-$(function () {
-  window.addEventListener("DOMContentLoaded", (event) => {
+window.addEventListener("DOMContentLoaded", (event) => {
     // Navbar shrink function
     var navbarShrink = function () {
       const navbarCollapsible = document.body.querySelector("#mainNav");
@@ -47,7 +46,8 @@ $(function () {
     });
   });
 
-  $("#form").submit(function (e) {
+
+$("#form").submit(function (e) {
     e.preventDefault();
     $("#error-message").hide();
     $("#success-message").hide();
@@ -73,17 +73,16 @@ $(function () {
     }
 
     if (!validText(message)) {
-      setErrorMessage("Insira uma mensagem válida!");
+      setErrorMessage("Insira uma menssagem válida!");
       return;
     }
 
     setSuccessMessage("Mensagem enviada!");
-    $("#inputName").val("");
-    $("#inputEmail").val("");
-    $("#inputPhone").val("");
-    $("#inputMessage").val("");
+    var name = $("#inputName").val("");
+    var email = $("#inputEmail").val("");
+    var phone = $("#inputPhone").val("");
+    var message = $("#inputMessage").val("");
   });
-});
 
 function setErrorMessage(message) {
   $("#error-message").text(message);
