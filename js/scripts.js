@@ -78,10 +78,10 @@ $(function () {
     }
 
     setSuccessMessage("Mensagem enviada!");
-    var name = $("#inputName").val("");
-    var email = $("#inputEmail").val("");
-    var phone = $("#inputPhone").val("");
-    var message = $("#inputMessage").val("");
+    $("#inputName").val("");
+    $("#inputEmail").val("");
+    $("#inputPhone").val("");
+    $("#inputMessage").val("");
   });
 });
 
