@@ -73,7 +73,7 @@ $(function () {
     }
 
     if (!validText(message)) {
-      setErrorMessage("Insira uma menssagem válida!");
+      setErrorMessage("Insira uma mensagem válida!");
       return;
     }
 
