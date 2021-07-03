@@ -11492,3 +11492,11 @@ footer.footer .social-link:hover {
 .text-default{
   color: var(--bs-default) !important;
 }
+
+#error-message{
+  display: none;
+}
+
+#success-message{
+  display: none;
+}
